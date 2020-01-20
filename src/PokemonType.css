@@ -1,0 +1,48 @@
+.grass {
+    background-color: green;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.fire {
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.water {
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.poison {
+    background-color: purple;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.bug {
+    background-color: yellowgreen;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.flying {
+    background-color: lightskyblue;
+    color: #ffffff;
+    border-radius: 5%;
+    padding: 0.2em;
+}
+
+.default {
+    background-color: gainsboro;
+    color: #000000;
+    border-radius: 5%;
+    padding: 0.2em;
+}

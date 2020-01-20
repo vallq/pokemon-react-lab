@@ -1,0 +1,9 @@
+.pokemon-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pokemon_gallery__title {
+    text-align: center;
+}
