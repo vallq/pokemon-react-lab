@@ -1,9 +1,22 @@
 .pokemon-gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 .pokemon_gallery__title {
-    text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pokemon_gallery__searchbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 0.5em;
 }

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  height: 2.5em;
+  padding: 1em;
+  display: flex;
+  margin: 0;
+  font-size: 21px;
+}
+
+a {
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+a + a {
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100px;
+}
