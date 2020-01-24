@@ -11,15 +11,15 @@ const Home = () => {
     <div>
       <p>Hello, welcome to the Pokemon fansite!</p>
       <img alt="pokeball" src={`${process.env.PUBLIC_URL}/img/pokeball.gif`} />
-      <p>source: <a href="https://rewatchingpokemon.tumblr.com">tumblr</a></p>
+      <p>
+        source: <a href="https://rewatchingpokemon.tumblr.com">tumblr</a>
+      </p>
     </div>
   );
 };
 
 const Gallery = () => {
-  return (
-    <PokemonGallery />
-  );
+  return <PokemonGallery />;
 };
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/gallery" component={Gallery} />
@@ -37,6 +38,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
