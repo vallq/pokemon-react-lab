@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function PokemonCard({ pokemon }) {
   const { id, name, type, base } = pokemon;
   return (
-    <Link to={`/pokemon/${id}`}>
+    <Link to={`/${id}`}>
     <div className="pokemon-card">
       <div className="pokemon-card__div">
         <img className="pokemon-card__image" src={`${process.env.PUBLIC_URL}/pokemonImage/${id}.png`} alt={name.english}></img>
