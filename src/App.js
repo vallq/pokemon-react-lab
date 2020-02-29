@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 import "./App.css";
+import PokemonDetailsPage from "./components/PokemonDetailsPage";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/gallery" component={Gallery} />
+          <Route path={`/pokemon/:pokemonId`} component={PokemonDetailsPage}/>
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
