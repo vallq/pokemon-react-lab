@@ -2,10 +2,12 @@ import React from "react";
 import "./PokemonCard.css";
 import {PokemonType} from "./PokemonType.js";
 import "./PokemonType.css";
+import { Link } from 'react-router-dom';
 
 function PokemonCard({ pokemon }) {
   const { id, name, type, base } = pokemon;
   return (
+    <Link to={`/pokemon/${id}`}>
     <div className="pokemon-card">
       <div className="pokemon-card__div">
         <img className="pokemon-card__image" src={`${process.env.PUBLIC_URL}/pokemonImage/${id}.png`} alt={name.english}></img>
@@ -20,6 +22,7 @@ function PokemonCard({ pokemon }) {
         return <p className="pokemon-card__base">{eachBase[0] + ": " + eachBase[1]}</p>;
       })}
     </div>
+    </Link>
   );
 }
 
