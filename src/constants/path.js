@@ -1,7 +1,9 @@
 const path = {
   home: "./home",
   about: "./about",
-  gallery: "./gallery"
+  gallery: "./gallery",
+  notfound: "./not-found",
+  pokemon: "./pokemon"
 };
 
 export default path;
