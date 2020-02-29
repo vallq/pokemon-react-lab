@@ -30,10 +30,10 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path={`/pokemon/:pokemonId`} component={PokemonDetailsPage}/>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/gallery" component={Gallery}/>
+          <Route exact path={`/:pokemonId`} component={PokemonDetailsPage}/>
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
